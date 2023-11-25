@@ -32,12 +32,19 @@ namespace ConsoleApp1
             ////string str = "fun&!! time";
             //string str = "I love dogs";
             //Console.WriteLine(str);
-            //LongestWord.Find(str);
+            //LongestWord.Find(str);            
 
             Console.WriteLine("------------------------\n");
 
-            Console.WriteLine("Example: ");
-            TestExample.RunExample();
+            Console.WriteLine("First Factorial: ");
+            int num = 8;
+            Console.WriteLine(num);
+            FirstFactorial.Calculate(num);
+
+            //Console.WriteLine("------------------------\n");
+
+            //Console.WriteLine("Example: ");
+            //TestExample.RunExample();
 
 
         }
