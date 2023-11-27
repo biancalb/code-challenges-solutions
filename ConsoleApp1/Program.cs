@@ -34,12 +34,19 @@ namespace ConsoleApp1
             //Console.WriteLine(str);
             //LongestWord.Find(str);            
 
+            //Console.WriteLine("------------------------\n");
+
+            //Console.WriteLine("First Factorial: ");
+            //int num = 8;
+            //Console.WriteLine(num);
+            //FirstFactorial.Calculate(num);            
+
             Console.WriteLine("------------------------\n");
 
-            Console.WriteLine("First Factorial: ");
-            int num = 8;
-            Console.WriteLine(num);
-            FirstFactorial.Calculate(num);
+            Console.WriteLine("First Reverse: ");
+            string str = "coderbyte";
+            Console.WriteLine(str);
+            FirstReverse.Reverse(str);
 
             //Console.WriteLine("------------------------\n");
 
