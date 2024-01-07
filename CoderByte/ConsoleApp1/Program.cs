@@ -41,12 +41,29 @@ namespace ConsoleApp1
             //Console.WriteLine(num);
             //FirstFactorial.Calculate(num);            
 
-            Console.WriteLine("------------------------\n");
+            //Console.WriteLine("------------------------\n");
 
-            Console.WriteLine("First Reverse: ");
-            string str = "coderbyte";
-            Console.WriteLine(str);
-            FirstReverse.Reverse(str);
+            //Console.WriteLine("First Reverse: ");
+            //string str = "coderbyte";
+            //Console.WriteLine(str);
+            //FirstReverse.Reverse(str);
+                        
+            //Console.WriteLine("------------------------\n");
+
+            //Console.WriteLine("Find Intersection: ");
+            ////string[] str = { "1, 3, 4, 7, 13", "1, 2, 4, 13, 15" };
+            //string[] str = { "1, 3, 9, 10, 17, 18", "1, 4, 9, 10" };
+            //FindIntersection.Find(str);
+            
+            Console.WriteLine("------------------------\n");
+            
+            Console.WriteLine("QuestionMarks: ");
+            //string str = "aa6?9"; //false
+            //string str = "acc?7??sss?3rr1??????5"; //true
+            //string str = "arrb6???4xxbl5???eee5"; //true
+            //string str = "9???1???9???1???9"; //true
+            string str = "9???1???9??1???9"; //false
+            QuestionMarks.Check(str);
 
             //Console.WriteLine("------------------------\n");
 
