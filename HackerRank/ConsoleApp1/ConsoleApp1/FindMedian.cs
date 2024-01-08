@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -10,15 +8,17 @@ namespace ConsoleApp1
     {
         public static void Find(List<int> arr)
         {
+            var arrOrdered = arr.OrderBy(x => x).ToList();
             if(arr.Count % 2 != 0)
             {
-                var arrOrdered = arr.OrderBy(x => x).ToList();
-                var medianIndex = Math.Ceiling((decimal)arr.Count / 2);
-                Console.WriteLine(arrOrdered[(int)medianIndex - 1]);
+                var medianIndex = (int)Math.Ceiling((decimal)arr.Count / 2) - 1;
+                Console.WriteLine(arrOrdered[medianIndex]);
             }
             else
             {
-                throw new NotImplementedException();
+                var centerIndex = (int)Math.Ceiling((decimal)arr.Count / 2) - 1;
+                var median = (double)(arrOrdered[(int)centerIndex] + arrOrdered[(int)centerIndex + 1]) / 2;
+                Console.WriteLine(median);
             }
         }
     }
