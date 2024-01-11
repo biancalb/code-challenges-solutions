@@ -25,7 +25,7 @@ namespace ConsoleApp1
                     Console.WriteLine("startIndex: " + startIndex);
                     Console.WriteLine("endIndex: " + endIndex);
 
-                    // to do: melhorar verificação
+#warning Not covering all cases
                     if (s[startIndex] != s[endIndex])
                     {
                         Console.WriteLine("Found Diff");
