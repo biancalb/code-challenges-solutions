@@ -126,14 +126,24 @@ namespace ConsoleApp1
             //    new Tuple<int, int, int, int>(43, 2, 70, 2), //NO
             //};
             //NumberLineJumps.IsPossible(v[2].Item1, v[2].Item2, v[2].Item3, v[2].Item4);            
-            
-            Console.WriteLine("Breaking the Records");
-            //var scores = new List<int>() { 12, 24, 10, 24 };
-            //var scores = new List<int>() { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
-            var scores = new List<int>() { 3, 4, 21, 36, 10, 28, 35, 5, 24, 42 };
 
-            BreakingRecords.CountRecords(scores);
+            //Console.WriteLine("Breaking the Records");
+            ////var scores = new List<int>() { 12, 24, 10, 24 };
+            ////var scores = new List<int>() { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
+            //var scores = new List<int>() { 3, 4, 21, 36, 10, 28, 35, 5, 24, 42 };
 
+            //BreakingRecords.CountRecords(scores);
+
+            Console.WriteLine("Subarray Division");
+            var v = new List<Tuple<List<int>, int, int>>()
+            {
+                new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 4, 2), //2
+                new Tuple<List<int>, int, int>(new List<int>{ 1, 2, 1, 3, 2 }, 3, 2), //2
+                new Tuple<List<int>, int, int>(new List<int>{ 1, 1, 1, 1, 1, 1 }, 3, 2), //0
+                new Tuple<List<int>, int, int>(new List<int>{ 4 }, 4, 1), //1
+                new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 2, 5), //0
+            };
+            SubarrayDivision.Calculate(v[0].Item1, v[0].Item2, v[0].Item3);
         }
     }
 }
