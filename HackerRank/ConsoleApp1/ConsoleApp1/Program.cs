@@ -134,16 +134,24 @@ namespace ConsoleApp1
 
             //BreakingRecords.CountRecords(scores);
 
-            Console.WriteLine("Subarray Division");
-            var v = new List<Tuple<List<int>, int, int>>()
+            //Console.WriteLine("Subarray Division");
+            //var v = new List<Tuple<List<int>, int, int>>()
+            //{
+            //    new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 4, 2), //2
+            //    new Tuple<List<int>, int, int>(new List<int>{ 1, 2, 1, 3, 2 }, 3, 2), //2
+            //    new Tuple<List<int>, int, int>(new List<int>{ 1, 1, 1, 1, 1, 1 }, 3, 2), //0
+            //    new Tuple<List<int>, int, int>(new List<int>{ 4 }, 4, 1), //1
+            //    new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 2, 5), //0
+            //};
+            //SubarrayDivision.Calculate(v[0].Item1, v[0].Item2, v[0].Item3);
+
+            Console.WriteLine("Divisible Sum Pairs");
+            var v = new List<Tuple<List<int>, int>>()
             {
-                new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 4, 2), //2
-                new Tuple<List<int>, int, int>(new List<int>{ 1, 2, 1, 3, 2 }, 3, 2), //2
-                new Tuple<List<int>, int, int>(new List<int>{ 1, 1, 1, 1, 1, 1 }, 3, 2), //0
-                new Tuple<List<int>, int, int>(new List<int>{ 4 }, 4, 1), //1
-                new Tuple<List<int>, int, int>(new List<int>{ 2, 2, 1, 3, 2 }, 2, 5), //0
+                new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 4, 5, 6 }, 5), //3
+                new Tuple<List<int>, int>(new List<int>{ 1, 3, 2, 6, 1, 2 }, 3), //5
             };
-            SubarrayDivision.Calculate(v[0].Item1, v[0].Item2, v[0].Item3);
+            DivisibleSumPairs.CountPairs(v[1].Item1.Count, v[1].Item2, v[1].Item1);
         }
     }
 }
