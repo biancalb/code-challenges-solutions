@@ -145,13 +145,23 @@ namespace ConsoleApp1
             //};
             //SubarrayDivision.Calculate(v[0].Item1, v[0].Item2, v[0].Item3);
 
-            Console.WriteLine("Divisible Sum Pairs");
-            var v = new List<Tuple<List<int>, int>>()
-            {
-                new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 4, 5, 6 }, 5), //3
-                new Tuple<List<int>, int>(new List<int>{ 1, 3, 2, 6, 1, 2 }, 3), //5
-            };
-            DivisibleSumPairs.CountPairs(v[1].Item1.Count, v[1].Item2, v[1].Item1);
+            //Console.WriteLine("Divisible Sum Pairs");
+            //var v = new List<Tuple<List<int>, int>>()
+            //{
+            //    new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 4, 5, 6 }, 5), //3
+            //    new Tuple<List<int>, int>(new List<int>{ 1, 3, 2, 6, 1, 2 }, 3), //5
+            //};
+            //DivisibleSumPairs.CountPairs(v[1].Item1.Count, v[1].Item2, v[1].Item1);
+
+            ////Console.WriteLine("Migratory Birds");
+            //var arr = new List<int> { 1, 1, 2, 2, 3 };
+            ////var arr = new List<int> { 1, 4, 4, 4, 5, 3 };
+            //MigratoryBirds.Calculate(arr);
+
+            Console.WriteLine("Day of the Programmer");
+            int year = 1800;
+            DayofTheProgrammer.Calculate(year);
+
         }
     }
 }
