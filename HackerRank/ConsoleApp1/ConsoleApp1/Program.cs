@@ -158,9 +158,17 @@ namespace ConsoleApp1
             ////var arr = new List<int> { 1, 4, 4, 4, 5, 3 };
             //MigratoryBirds.Calculate(arr);
 
-            Console.WriteLine("Day of the Programmer");
-            int year = 1800;
-            DayofTheProgrammer.Calculate(year);
+            //Console.WriteLine("Day of the Programmer");
+            //int year = 1800;
+            //DayofTheProgrammer.Calculate(year);            
+
+            Console.WriteLine("Bill Division");
+            var v = new List<Tuple<List<int>, int, int>>()
+            {
+                new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 7), //Bon Appetit
+                new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 12), //5
+            };
+            BillDivision.CheckBill(v[0].Item1, v[0].Item2, v[0].Item3);
 
         }
     }
