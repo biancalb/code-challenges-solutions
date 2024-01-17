@@ -162,13 +162,19 @@ namespace ConsoleApp1
             //int year = 1800;
             //DayofTheProgrammer.Calculate(year);            
 
-            Console.WriteLine("Bill Division");
-            var v = new List<Tuple<List<int>, int, int>>()
-            {
-                new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 7), //Bon Appetit
-                new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 12), //5
-            };
-            BillDivision.CheckBill(v[0].Item1, v[0].Item2, v[0].Item3);
+            //Console.WriteLine("Bill Division");
+            //var v = new List<Tuple<List<int>, int, int>>()
+            //{
+            //    new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 7), //Bon Appetit
+            //    new Tuple<List<int>, int, int>(new List<int>{ 3, 10, 2, 9 }, 1, 12), //5
+            //};
+            //BillDivision.CheckBill(v[0].Item1, v[0].Item2, v[0].Item3);
+
+            //Console.WriteLine("Sales by Match");
+            //var arr = new List<int> { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
+            var arr = new List<int> { 1, 2, 1, 2, 1, 3, 2 };
+            SalesbyMatch.CountPairs(arr.Count, arr);
+
 
         }
     }
