@@ -170,11 +170,17 @@ namespace ConsoleApp1
             //};
             //BillDivision.CheckBill(v[0].Item1, v[0].Item2, v[0].Item3);
 
-            //Console.WriteLine("Sales by Match");
-            //var arr = new List<int> { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
-            var arr = new List<int> { 1, 2, 1, 2, 1, 3, 2 };
-            SalesbyMatch.CountPairs(arr.Count, arr);
+            ////Console.WriteLine("Sales by Match");
+            ////var arr = new List<int> { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
+            //var arr = new List<int> { 1, 2, 1, 2, 1, 3, 2 };
+            //SalesbyMatch.CountPairs(arr.Count, arr);
 
+            Console.WriteLine("Counting Valley");
+            //var path = "UDDDUDUU"; //1
+            var path = "DDUUDDUDUUUD"; //2
+            CountingValleys.Count(path.Length, path);
+
+            
 
         }
     }
