@@ -180,15 +180,22 @@ namespace ConsoleApp1
             //var path = "DDUUDDUDUUUD"; //2
             //CountingValleys.Count(path.Length, path);
 
-            Console.WriteLine("Eletronics Shop");
-            var v = new List<Tuple<int[], int[], int>>()
-            {
-                new Tuple<int[], int[], int>(new int[] { 3, 1 }, new int[] { 5, 2, 8 }, 10), //9
-                new Tuple<int[], int[], int>(new int[] { 4 }, new int[] { 5 }, 5), //-1
-            };
-            EletronicsShop.GetMoneySpent(v[1].Item1, v[1].Item2, v[1].Item3);
+            //Console.WriteLine("Eletronics Shop");
+            //var v = new List<Tuple<int[], int[], int>>()
+            //{
+            //    new Tuple<int[], int[], int>(new int[] { 3, 1 }, new int[] { 5, 2, 8 }, 10), //9
+            //    new Tuple<int[], int[], int>(new int[] { 4 }, new int[] { 5 }, 5), //-1
+            //};
+            //EletronicsShop.GetMoneySpent(v[1].Item1, v[1].Item2, v[1].Item3);
 
-            
+            Console.WriteLine("The Hurdle Race");
+            var v = new List<Tuple<List<int>, int>>()
+            {
+                new Tuple<List<int>, int>(new List<int>{ 1, 6, 3, 5, 2 }, 4), //2
+                new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 3, 2 }, 1), //2
+                new Tuple<List<int>, int>(new List<int>{ 2, 5, 4, 5, 2 }, 7), //0
+            };
+            TheHurdleRace.CountPotions(v[2].Item2, v[2].Item1);
 
         }
     }
