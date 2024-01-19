@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Numerics;
 
 namespace ConsoleApp1
@@ -188,15 +189,22 @@ namespace ConsoleApp1
             //};
             //EletronicsShop.GetMoneySpent(v[1].Item1, v[1].Item2, v[1].Item3);
 
-            Console.WriteLine("The Hurdle Race");
-            var v = new List<Tuple<List<int>, int>>()
-            {
-                new Tuple<List<int>, int>(new List<int>{ 1, 6, 3, 5, 2 }, 4), //2
-                new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 3, 2 }, 1), //2
-                new Tuple<List<int>, int>(new List<int>{ 2, 5, 4, 5, 2 }, 7), //0
-            };
-            TheHurdleRace.CountPotions(v[2].Item2, v[2].Item1);
+            //Console.WriteLine("The Hurdle Race");
+            //var v = new List<Tuple<List<int>, int>>()
+            //{
+            //    new Tuple<List<int>, int>(new List<int>{ 1, 6, 3, 5, 2 }, 4), //2
+            //    new Tuple<List<int>, int>(new List<int>{ 1, 2, 3, 3, 2 }, 1), //2
+            //    new Tuple<List<int>, int>(new List<int>{ 2, 5, 4, 5, 2 }, 7), //0
+            //};
+            //TheHurdleRace.CountPotions(v[2].Item2, v[2].Item1);
 
+            Console.WriteLine("Designer PDF Viewer");
+            var v = new List<Tuple<List<int>, string>>()
+            {
+                new Tuple<List<int>, string>(new List<int>{ 1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+ }, "abc"), //9
+            };
+            DesignerPDFViewer.CalculateArea(v[0].Item1, v[0].Item2);
         }
     }
 }
