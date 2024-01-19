@@ -175,10 +175,18 @@ namespace ConsoleApp1
             //var arr = new List<int> { 1, 2, 1, 2, 1, 3, 2 };
             //SalesbyMatch.CountPairs(arr.Count, arr);
 
-            Console.WriteLine("Counting Valley");
-            //var path = "UDDDUDUU"; //1
-            var path = "DDUUDDUDUUUD"; //2
-            CountingValleys.Count(path.Length, path);
+            //Console.WriteLine("Counting Valley");
+            ////var path = "UDDDUDUU"; //1
+            //var path = "DDUUDDUDUUUD"; //2
+            //CountingValleys.Count(path.Length, path);
+
+            Console.WriteLine("Eletronics Shop");
+            var v = new List<Tuple<int[], int[], int>>()
+            {
+                new Tuple<int[], int[], int>(new int[] { 3, 1 }, new int[] { 5, 2, 8 }, 10), //9
+                new Tuple<int[], int[], int>(new int[] { 4 }, new int[] { 5 }, 5), //-1
+            };
+            EletronicsShop.GetMoneySpent(v[1].Item1, v[1].Item2, v[1].Item3);
 
             
 
