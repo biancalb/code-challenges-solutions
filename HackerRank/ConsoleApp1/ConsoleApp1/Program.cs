@@ -233,12 +233,16 @@ namespace ConsoleApp1
             //    Console.WriteLine("\n");
             //}
 
-            Console.WriteLine("Beautiful Days at the Movies");
-            var v = new List<Tuple<int, int, int>>()
-            {
-                new Tuple<int, int, int>(20, 23, 6), //2
-            };
-            BeautifulDaysMovies.CountBeautifulDays(v[0].Item1, v[0].Item2, v[0].Item3);
+            //Console.WriteLine("Beautiful Days at the Movies");
+            //var v = new List<Tuple<int, int, int>>()
+            //{
+            //    new Tuple<int, int, int>(20, 23, 6), //2
+            //};
+            //BeautifulDaysMovies.CountBeautifulDays(v[0].Item1, v[0].Item2, v[0].Item3);
+
+            Console.WriteLine("Viral Advertising");
+            int n = 3;
+            ViralAdvertising.CalculatePeopleLiked(n);
         }
     }
 }
