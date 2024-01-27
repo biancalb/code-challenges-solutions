@@ -240,9 +240,14 @@ namespace ConsoleApp1
             //};
             //BeautifulDaysMovies.CountBeautifulDays(v[0].Item1, v[0].Item2, v[0].Item3);
 
-            Console.WriteLine("Viral Advertising");
-            int n = 3;
-            ViralAdvertising.CalculatePeopleLiked(n);
+            //Console.WriteLine("Viral Advertising");
+            //int n = 3;
+            //ViralAdvertising.CalculatePeopleLiked(n);
+
+            Console.WriteLine("Sequence Equation");
+            //var p = new List<int>  { 2, 3, 1};
+            var p = new List<int>  { 4, 3, 5, 1, 2 };
+            SequenceEquation.PermutationEquation(p);
         }
     }
 }
