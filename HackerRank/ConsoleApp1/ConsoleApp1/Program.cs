@@ -249,14 +249,19 @@ namespace ConsoleApp1
             //var p = new List<int>  { 4, 3, 5, 1, 2 };
             //SequenceEquation.PermutationEquation(p);
 
-            Console.WriteLine("Jumping on the Clouds");
-            var v = new List<Tuple<int[], int>>()
-            {
-                new Tuple<int[], int>(new int[]{ 0, 0, 1, 0, 0, 1, 1, 0 }, 2), //92
-                new Tuple<int[], int>(new int[]{ 0, 0, 1, 0, 0, 1, 1, 0 }, 2), //92
-                new Tuple<int[], int>(new int[]{ 1, 1, 1, 0, 1, 1, 0, 0, 0, 0 }, 3), //80
-            };
-            JumpingOnTheCloud.CalculateEnergyLevel(v[2].Item1, v[2].Item2);
+            //Console.WriteLine("Jumping on the Clouds");
+            //var v = new List<Tuple<int[], int>>()
+            //{
+            //    new Tuple<int[], int>(new int[]{ 0, 0, 1, 0, 0, 1, 1, 0 }, 2), //92
+            //    new Tuple<int[], int>(new int[]{ 0, 0, 1, 0, 0, 1, 1, 0 }, 2), //92
+            //    new Tuple<int[], int>(new int[]{ 1, 1, 1, 0, 1, 1, 0, 0, 0, 0 }, 3), //80
+            //};
+            //JumpingOnTheCloud.CalculateEnergyLevel(v[2].Item1, v[2].Item2);
+
+            Console.WriteLine("Cut the Sticks");
+            //var sticks = new List<int> { 1, 2, 3 };
+            var sticks = new List<int> { 5, 4, 4, 2, 2, 8 };
+            CutTheSticks.Cut(sticks);
         }
     }
 }
