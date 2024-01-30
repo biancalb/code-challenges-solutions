@@ -258,10 +258,13 @@ namespace ConsoleApp1
             //};
             //JumpingOnTheCloud.CalculateEnergyLevel(v[2].Item1, v[2].Item2);
 
-            Console.WriteLine("Cut the Sticks");
-            //var sticks = new List<int> { 1, 2, 3 };
-            var sticks = new List<int> { 5, 4, 4, 2, 2, 8 };
-            CutTheSticks.Cut(sticks);
+            //Console.WriteLine("Cut the Sticks");
+            ////var sticks = new List<int> { 1, 2, 3 };
+            //var sticks = new List<int> { 5, 4, 4, 2, 2, 8 };
+            //CutTheSticks.Cut(sticks);
+
+            Console.WriteLine("Find Digits");
+            FindDigits.CountDivisors(1012);
         }
     }
 }
