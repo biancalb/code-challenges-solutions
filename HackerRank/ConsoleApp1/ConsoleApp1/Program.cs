@@ -263,8 +263,18 @@ namespace ConsoleApp1
             //var sticks = new List<int> { 5, 4, 4, 2, 2, 8 };
             //CutTheSticks.Cut(sticks);
 
-            Console.WriteLine("Find Digits");
-            FindDigits.CountDivisors(1012);
+            //Console.WriteLine("Find Digits");
+            //FindDigits.CountDivisors(1012);
+
+            Console.WriteLine("Library Fine");
+            var v = new List<Tuple<int, int, int, int, int, int>>()
+            {
+                new Tuple<int, int, int, int, int, int>(14, 7, 2018, 5, 7, 2018), //135
+                new Tuple<int, int, int, int, int, int>(9, 6, 2015, 6, 6, 2015), //45
+                new Tuple<int, int, int, int, int, int>(5, 5, 2014, 23, 2, 2014), //1500
+            };
+            int index = 2;
+            LibraryFine.CalculateFine(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4, v[index].Item5, v[index].Item6);
         }
     }
 }
