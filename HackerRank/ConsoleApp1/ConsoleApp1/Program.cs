@@ -266,15 +266,26 @@ namespace ConsoleApp1
             //Console.WriteLine("Find Digits");
             //FindDigits.CountDivisors(1012);
 
-            Console.WriteLine("Library Fine");
-            var v = new List<Tuple<int, int, int, int, int, int>>()
+            //Console.WriteLine("Library Fine");
+            //var v = new List<Tuple<int, int, int, int, int, int>>()
+            //{
+            //    new Tuple<int, int, int, int, int, int>(14, 7, 2018, 5, 7, 2018), //135
+            //    new Tuple<int, int, int, int, int, int>(9, 6, 2015, 6, 6, 2015), //45
+            //    new Tuple<int, int, int, int, int, int>(5, 5, 2014, 23, 2, 2014), //1500
+            //};
+            //int index = 2;
+            //LibraryFine.CalculateFine(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4, v[index].Item5, v[index].Item6);
+
+            Console.WriteLine("Repeated String");
+            var v = new List<Tuple<string, long>>()
             {
-                new Tuple<int, int, int, int, int, int>(14, 7, 2018, 5, 7, 2018), //135
-                new Tuple<int, int, int, int, int, int>(9, 6, 2015, 6, 6, 2015), //45
-                new Tuple<int, int, int, int, int, int>(5, 5, 2014, 23, 2, 2014), //1500
+                new Tuple<string, long>("abcac", 10), //4
+                new Tuple<string, long>("aba", 10), //7
+                new Tuple<string, long>("a", 1000000000000), //1000000000000
+                new Tuple<string, long>("d", 590826798023), //0
+                new Tuple<string, long>("x", 970770), //0
             };
-            int index = 2;
-            LibraryFine.CalculateFine(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4, v[index].Item5, v[index].Item6);
+            RepeatedString.CountRepeatedA(v[3].Item1, v[3].Item2);
         }
     }
 }
