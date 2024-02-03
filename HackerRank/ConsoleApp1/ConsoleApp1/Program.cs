@@ -276,16 +276,19 @@ namespace ConsoleApp1
             //int index = 2;
             //LibraryFine.CalculateFine(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4, v[index].Item5, v[index].Item6);
 
-            Console.WriteLine("Repeated String");
-            var v = new List<Tuple<string, long>>()
-            {
-                new Tuple<string, long>("abcac", 10), //4
-                new Tuple<string, long>("aba", 10), //7
-                new Tuple<string, long>("a", 1000000000000), //1000000000000
-                new Tuple<string, long>("d", 590826798023), //0
-                new Tuple<string, long>("x", 970770), //0
-            };
-            RepeatedString.CountRepeatedA(v[3].Item1, v[3].Item2);
+            //Console.WriteLine("Repeated String");
+            //var v = new List<Tuple<string, long>>()
+            //{
+            //    new Tuple<string, long>("abcac", 10), //4
+            //    new Tuple<string, long>("aba", 10), //7
+            //    new Tuple<string, long>("a", 1000000000000), //1000000000000
+            //    new Tuple<string, long>("d", 590826798023), //0
+            //    new Tuple<string, long>("x", 970770), //0
+            //};
+            //RepeatedString.CountRepeatedA(v[3].Item1, v[3].Item2);
+            
+            Console.WriteLine("Cats and a Mouse");
+            CatsAndAMouse.Main(1, 3, 2);
         }
     }
 }
