@@ -290,18 +290,32 @@ namespace ConsoleApp1
             //Console.WriteLine("Cats and a Mouse");
             //CatsAndAMouse.Main(1, 3, 2);
 
-            Console.WriteLine("Halloween Sale");
-            var v = new List<Tuple<int, int, int, int>>()
+            //Console.WriteLine("Halloween Sale");
+            //var v = new List<Tuple<int, int, int, int>>()
+            //{
+            //    new Tuple<int, int, int, int>(20, 3, 6, 70), //5
+            //    new Tuple<int, int, int, int>(20, 3, 6, 80), //6
+            //    new Tuple<int, int, int, int>(20, 3, 6, 85), //7
+            //    new Tuple<int, int, int, int>(16, 2, 1, 9981), //9917
+            //    new Tuple<int, int, int, int>(100, 1, 1, 99), //0
+            //    new Tuple<int, int, int, int>(100, 19, 1, 180), //1
+            //};
+            //int index = 5;
+            //HalloweenSale.HowManyGames(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4);            //Console.WriteLine("Halloween Sale");
+
+
+            Console.WriteLine("Chocolate Feast");
+            var v = new List<Tuple<int, int, int>>()
             {
-                new Tuple<int, int, int, int>(20, 3, 6, 70), //5
-                new Tuple<int, int, int, int>(20, 3, 6, 80), //6
-                new Tuple<int, int, int, int>(20, 3, 6, 85), //7
-                new Tuple<int, int, int, int>(16, 2, 1, 9981), //9917
-                new Tuple<int, int, int, int>(100, 1, 1, 99), //0
-                new Tuple<int, int, int, int>(100, 19, 1, 180), //1
+                new Tuple<int, int, int>(10, 2, 5), //6
+                new Tuple<int, int, int>(12, 4, 4), //3
+                new Tuple<int, int, int>(6, 2, 2), //5
+                new Tuple<int, int, int>(16809, 123, 11668), //136
+                new Tuple<int, int, int>(20373, 18211, 10188), // 1
             };
-            int index = 5;
-            HalloweenSale.HowManyGames(v[index].Item1, v[index].Item2, v[index].Item3, v[index].Item4);
+
+            int i = 0;
+            ChocolateFeast.Calculate(v[i].Item1, v[i].Item2, v[i].Item3);
         }
     }
 }
