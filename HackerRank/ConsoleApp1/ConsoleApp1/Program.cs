@@ -317,17 +317,27 @@ namespace ConsoleApp1
             //int i = 0;
             //ChocolateFeast.Calculate(v[i].Item1, v[i].Item2, v[i].Item3);
 
-            Console.WriteLine("Service Lane");
-            var cases = new List<List<int>>();
+            //Console.WriteLine("Service Lane");
+            //var cases = new List<List<int>>();
 
-            var width = new List<int> { 1, 2, 2, 2, 1 };
-            cases.Add(new List<int> { 2, 3 });
-            cases.Add(new List<int> { 1, 4 });
-            cases.Add(new List<int> { 2, 4 });
-            cases.Add(new List<int> { 2, 4 });
-            cases.Add(new List<int> { 2, 3 });
+            //var width = new List<int> { 1, 2, 2, 2, 1 };
+            //cases.Add(new List<int> { 2, 3 });
+            //cases.Add(new List<int> { 1, 4 });
+            //cases.Add(new List<int> { 2, 4 });
+            //cases.Add(new List<int> { 2, 4 });
+            //cases.Add(new List<int> { 2, 3 });
 
-            ServiceLane.CalculateMaximumSizes(width.Count, cases, width);
+            //ServiceLane.CalculateMaximumSizes(width.Count, cases, width);
+
+            Console.WriteLine("Lisa's Workbook\n");
+            var v = new List<Tuple<int, int, List<int>>>()
+            {
+                new Tuple<int, int, List<int>>(2, 3, new List<int> { 4, 2}), //1
+                new Tuple<int, int, List<int>>(5, 3, new List<int> { 4, 2, 6, 1, 10}), //4
+            };
+            var index = 1;
+            LisasWorkbook.CountSpecialProblems(v[index].Item1, v[index].Item2, v[index].Item3);
+
         }
     }
 }
