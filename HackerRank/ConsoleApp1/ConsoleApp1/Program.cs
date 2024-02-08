@@ -329,14 +329,14 @@ namespace ConsoleApp1
 
             //ServiceLane.CalculateMaximumSizes(width.Count, cases, width);
 
-            Console.WriteLine("Lisa's Workbook\n");
-            var v = new List<Tuple<int, int, List<int>>>()
-            {
-                new Tuple<int, int, List<int>>(2, 3, new List<int> { 4, 2}), //1
-                new Tuple<int, int, List<int>>(5, 3, new List<int> { 4, 2, 6, 1, 10}), //4
-            };
-            var index = 1;
-            LisasWorkbook.CountSpecialProblems(v[index].Item1, v[index].Item2, v[index].Item3);
+            //Console.WriteLine("Lisa's Workbook\n");
+            //var v = new List<Tuple<int, int, List<int>>>()
+            //{
+            //    new Tuple<int, int, List<int>>(2, 3, new List<int> { 4, 2}), //1
+            //    new Tuple<int, int, List<int>>(5, 3, new List<int> { 4, 2, 6, 1, 10}), //4
+            //};
+            //var index = 1;
+            //LisasWorkbook.CountSpecialProblems(v[index].Item1, v[index].Item2, v[index].Item3);
 
         }
     }
