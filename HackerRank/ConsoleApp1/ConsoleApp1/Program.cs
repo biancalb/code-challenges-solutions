@@ -338,9 +338,9 @@ namespace ConsoleApp1
             //var index = 1;
             //LisasWorkbook.CountSpecialProblems(v[index].Item1, v[index].Item2, v[index].Item3);
 
-            Console.WriteLine("Cavity Map");
-            var grid = new List<string> { "1112", "1912", "1892", "1234" };            
-            CavityMap.FindCavity(grid);
+            //Console.WriteLine("Cavity Map");
+            //var grid = new List<string> { "1112", "1912", "1892", "1234" };            
+            //CavityMap.FindCavity(grid);
         }
     }
 }
