@@ -342,14 +342,18 @@ namespace ConsoleApp1
             //var grid = new List<string> { "1112", "1912", "1892", "1234" };            
             //CavityMap.FindCavity(grid);
 
-            Console.WriteLine("Beautiful Triplets");
-            var v = new List<Tuple<int, List<int>>>()
-            {
-                new Tuple<int, List<int>>(1, new List<int> { 2, 2, 3, 4, 5}), //3
-                new Tuple<int, List<int>>(3, new List<int> { 1, 2, 4, 5, 7, 8, 10}), //3
-            };
-            var index = 1;
-            BeautifulTriplets.CountIsBeautiful(v[index].Item1, v[index].Item2);
+            //Console.WriteLine("Beautiful Triplets");
+            //var v = new List<Tuple<int, List<int>>>()
+            //{
+            //    new Tuple<int, List<int>>(1, new List<int> { 2, 2, 3, 4, 5}), //3
+            //    new Tuple<int, List<int>>(3, new List<int> { 1, 2, 4, 5, 7, 8, 10}), //3
+            //};
+            //var index = 1;
+            //BeautifulTriplets.CountIsBeautiful(v[index].Item1, v[index].Item2);
+
+            Console.WriteLine("Mars Exploration");
+            var s = "SOSSPSSQSSOR";
+            MarsExploration.CountChangedLetters(s);
         }
     }
 }
