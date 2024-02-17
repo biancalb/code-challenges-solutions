@@ -351,9 +351,13 @@ namespace ConsoleApp1
             //var index = 1;
             //BeautifulTriplets.CountIsBeautiful(v[index].Item1, v[index].Item2);
 
-            Console.WriteLine("Mars Exploration");
-            var s = "SOSSPSSQSSOR";
-            MarsExploration.CountChangedLetters(s);
+            //Console.WriteLine("Mars Exploration");
+            //var s = "SOSSPSSQSSOR";
+            //MarsExploration.CountChangedLetters(s);
+
+            Console.WriteLine("Insertion Sort - Part 2");
+            var arr = new List<int>() { 1, 4, 3, 5, 6, 2 };
+            InsertionSortPart2.Sort(arr.Count, arr);
         }
     }
 }
